@@ -1,0 +1,28 @@
+.card {
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+.card:hover {
+  -webkit-transform: translateY(-4px);
+  transform: translateY(-4px);
+}
+
+
+.one{
+  /* display: inline-block;
+  margin: 0 0.5rem; */
+
+  animation-duration: 1.0s; /* don't forget to set a duration! */
+}
+
+.two{
+  
+  animation-duration: 1.5s; /* don't forget to set a duration! */
+  
+}
+
+
+.three{
+  animation-duration: 2.5s; /* don't forget to set a duration! */
+  
+}
