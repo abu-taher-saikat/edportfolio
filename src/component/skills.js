@@ -43,7 +43,7 @@ export default function Skills() {
               justifyContent="center"
               spacing={2}
             >
-              <Grid item>
+              <Grid item className="animate__animated animate__fadeIn animate__zoomIn">
                 <Typography
                   variant="h3"
                   style={{
@@ -53,7 +53,7 @@ export default function Skills() {
                   }}
                 >
                   SKILLS
-                </Typography>
+                </Typography> 
               </Grid>
               <Grid item container justifyContent="center">
                 <Grid item xs={5}>
@@ -62,7 +62,7 @@ export default function Skills() {
                     style={{ padding: matchesSM ? 0 : '0.4em 1.4em' }}
                   >
                     {skillsArr.map((s) => (
-                      <li className="skills__list-item btn btn--plain" key={s}>
+                      <li className="skills__list-item btn btn--plain animate__animated  animate__fadeInUp" key={s}>
                         <Typography
                           variant="h9"
                           style={{

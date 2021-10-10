@@ -32,7 +32,7 @@ export default function AppBar(props) {
           width: '100vw',
         },
       }}
-    >
+      >
       <Grid
         container
         direction="column"
@@ -40,8 +40,10 @@ export default function AppBar(props) {
         alignItems="center"
         style={{ height: '100%', position: 'relative' }}
         spacing={2}
+        
+        
       >
-        <div style={{ position: 'absolute', top: 15, right: 2 }}>
+        <div style={{ position: 'absolute', top: 15, right: 2 }} >
           <IconButton onClick={() => props.setOpenDrawer(false)}>
             <CloseIcon />
           </IconButton>
@@ -80,6 +82,7 @@ export default function AppBar(props) {
         display: 'flex',
         // justifyContent: "flex-end"
       }}
+      className="animate__animated animate__backInRight"
     >
       <Grid item xs={10} md={9}>
         <Card

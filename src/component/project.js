@@ -21,19 +21,19 @@ export default function Project() {
     {
       name: ' Course Registration',
       tech: ['C#', 'HTML', 'ASP.NET'],
-      gitUrl: 'https://github.com/EdmondnNi/Course_regis',
+      gitUrl: 'https://github.com/EdmoDev/counter--app',
       delay : 'one'
     },
     {
       name: 'Curremcy Converter',
       tech: ['TypeScript', 'HTML & CSS' ,'Angular'],
-      gitUrl: "https://github.com/EdmondnNi/Currency-converter-app",
+      gitUrl: "https://github.com/EdmoDev/Currency-converter-app",
       delay : 'two'
     },
     {
       name: 'Counter WebApp',
       tech: ['Javascript', 'HTML', 'React'],
-      gitUrl: "https://github.com/EdmondnNi/Currency-converter-app",
+      gitUrl: "https://github.com/EdmoDev/Course_regis",
       delay : 'three'
     },
   ];
@@ -49,7 +49,7 @@ export default function Project() {
         <Grid item xs={10}>
           <CustomCard style={{ padding: matchesSM ? '1em' : '2em 4em' }}>
             <Grid container direction="column" spacing={1} alignItems="center">
-              <Grid item>
+              <Grid item className="animate__animated animate__fadeIn animate__zoomIn">
                 <Typography variant="h4">Project!</Typography>
               </Grid>
               <Grid item container justifyContent="center">
@@ -58,7 +58,7 @@ export default function Project() {
                 </Grid>
               </Grid>
               <Grid item container justifyContent="center">
-                <Grid item xs={10}>
+                <Grid item xs={10} className="animate__animated  animate__fadeInUp">
                   <Typography
                     variant="body2"
                     color="#2978B5"
@@ -76,7 +76,7 @@ export default function Project() {
               <Grid item container spacing={2}>
                 {projectsArr.map((pro) => (
                   <Grid item md={4} sm={6} xs={12} key={pro.name} className={`animate__animated animate__bounceInLeft ${pro.delay}`} >
-                    <div >
+                    
                     <Card
                       elevation={0}
                       style={{
@@ -93,7 +93,7 @@ export default function Project() {
                         justifyContent="space-between"
                         style={{ height: '10em' }}
                       >
-                        <Grid item>
+                        <Grid item >
                           <Typography
                             variant="h6"
                             style={{
@@ -101,6 +101,7 @@ export default function Project() {
                               color: '#444444',
                               lineHeight: 1,
                             }}
+                            
                           >
                             {pro.name}
                           </Typography>
@@ -162,7 +163,7 @@ export default function Project() {
                                     */}
                             <Grid item>
                                   <a
-                                    href='https://github.com/EdmondnNi'
+                                    href={pro.gitUrl}
                                     style={{
                                       textDecoration: 'none',
                                       color: 'inherit',
@@ -187,7 +188,7 @@ export default function Project() {
                         </Grid>
                       </Grid>
                     </Card>
-                    </div>
+                    
                   </Grid>
                 ))}
               </Grid>
@@ -206,7 +207,7 @@ export default function Project() {
                     boxShadow: 'rgba(100,100,111,0.2) 0px 7px 29px 0px',
                   }}
                 >
-                  <a href="https://github.com/EdmondnNi"
+                  <a href="www.facebook.com"
                    style={{ textDecoration: 'none' }}>
                     <Typography
                       variant="body1"

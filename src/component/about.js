@@ -35,13 +35,13 @@ export default function About() {
               {/* for Text */}
               <Grid item>
                 <Grid container direction="column" spacing={4}>
-                  <Grid item>
+                  <Grid item className="animate__animated animate__zoomIn">
                     <Typography variant="body1">Hello, I'm Edmond</Typography>
                   </Grid>
-                  <Grid item style={{ marginLeft: '4.5em' }}>
+                  <Grid item style={{ marginLeft: '4.5em' }} className="animate__animated animate__fadeIn animate__zoomIn">
                     <Typography variant="h4">Welcome to my World!</Typography>
                   </Grid>
-                  <Grid item container justifyContent="center">
+                  <Grid item container justifyContent="center" className="animate__animated  animate__fadeInUp">
                     <Typography
                       variant="body2"
                       color="#2978B5"

@@ -41,13 +41,14 @@ export default function App() {
   const [openDrawer, setOpenDrawer] = useState(false);
 
   return (
-    <Grid container style={{ backgroundColor: '#F6F5FA', minHeight: '100vh' }}>
+    <Grid container style={{ backgroundColor: '#F6F5FA', minHeight: '100vh' }} >
       {/* left bar */}
       <Grid item lg={3} xs={12}>
         <Grid
           container
           direction={'column'}
           alignItems={matchesSM ? 'center' : undefined}
+          className="animate__animated animate__fadeInLeft"
         >
           {/* logo */}
           <Grid
